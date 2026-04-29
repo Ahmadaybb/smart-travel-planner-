@@ -1,0 +1,6 @@
+model,params,cv_accuracy_mean,cv_f1_macro_mean,val_accuracy,val_f1_macro,test_accuracy,test_f1_macro,timestamp
+RandomForest,default,0.8556,0.8506,0.9,0.8997,,,2026-04-27T14:03:46.094199
+LogisticRegression,default,0.8667,0.862,0.9,0.8997,,,2026-04-27T14:03:46.501404
+GradientBoosting,default,0.8556,0.8431,0.9,0.8997,,,2026-04-27T14:03:51.030035
+GradientBoosting_tuned,"{'clf__learning_rate': 0.05, 'clf__max_depth': 5, 'clf__min_samples_split': 5, 'clf__n_estimators': 300}",,0.8882,0.9333,0.9327,,,2026-04-27T14:09:15.381140
+RandomForest_tuned,"{'clf__max_depth': None, 'clf__min_samples_split': 5, 'clf__n_estimators': 100}",,0.8729,,0.8997,0.9667,0.9663,2026-04-27T14:09:29.121915

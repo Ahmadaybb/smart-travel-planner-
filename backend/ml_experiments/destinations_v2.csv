@@ -1,0 +1,151 @@
+destination,country,avg_cost_per_day_usd,avg_temp_july_celsius,hiking_score,beach_score,museums_count,unesco_sites,tourist_density,family_friendly_score,safety_score,avg_meal_cost_usd,label
+Patagonia,Argentina,85,4,5,1,1,1,2,3,4,12,Adventure
+Queenstown,New Zealand,120,8,5,2,2,0,3,3,5,18,Adventure
+Interlaken,Switzerland,180,18,5,1,3,1,4,3,5,25,Adventure
+Moab,USA,100,38,5,1,1,0,3,3,5,15,Adventure
+Banff,Canada,130,15,5,1,1,1,4,4,5,20,Adventure
+Nepal,Nepal,45,18,5,1,2,1,3,2,3,6,Adventure
+Iceland,Iceland,200,10,5,2,3,1,3,3,5,30,Adventure
+Chamonix,France,160,15,5,1,2,1,3,3,5,22,Adventure
+Whistler,Canada,150,18,5,1,1,0,3,4,5,20,Adventure
+Kilimanjaro,Tanzania,120,10,5,1,1,1,2,2,3,10,Adventure
+Zhangjiajie,China,60,28,5,1,2,1,3,3,4,8,Adventure
+Faroe Islands,Denmark,170,10,5,2,1,0,1,2,5,28,Adventure
+Ladakh,India,50,20,5,1,2,1,2,2,3,7,Adventure
+Dolomites,Italy,140,18,5,1,2,1,3,3,5,20,Adventure
+Torres del Paine,Chile,90,5,5,1,1,1,2,3,4,12,Adventure
+Wanaka,New Zealand,110,8,5,2,1,0,2,4,5,16,Adventure
+Zermatt,Switzerland,190,15,5,1,2,1,3,3,5,28,Adventure
+Huaraz,Peru,40,15,5,1,1,1,2,2,3,6,Adventure
+Medellin,Colombia,55,22,4,1,3,0,3,3,3,8,Adventure
+Tbilisi Adventure,Georgia,45,28,4,1,4,3,2,3,4,7,Adventure
+Corsica,France,150,26,4,4,2,0,3,3,5,22,Adventure
+Azores,Portugal,100,22,4,3,1,0,2,3,5,15,Adventure
+Scottish Highlands,Scotland,110,14,5,2,2,1,2,3,5,18,Adventure
+Hokkaido,Japan,120,20,4,2,3,0,3,4,5,18,Adventure
+Cappadocia,Turkey,80,28,4,1,3,1,3,3,4,12,Adventure
+Maldives,Maldives,350,30,1,5,0,0,3,3,5,45,Relaxation
+Bali,Indonesia,60,28,2,4,2,1,4,4,4,9,Relaxation
+Santorini,Greece,200,26,1,4,1,0,4,3,5,28,Relaxation
+Phuket,Thailand,70,30,1,5,1,0,5,4,4,10,Relaxation
+Fiji,Fiji,180,26,2,5,0,0,2,4,5,22,Relaxation
+Seychelles,Seychelles,300,28,2,5,0,0,2,3,5,40,Relaxation
+Tulum,Mexico,120,30,1,5,1,1,3,3,4,15,Relaxation
+Koh Samui,Thailand,65,30,1,5,1,0,3,3,4,9,Relaxation
+Amalfi Coast,Italy,180,26,2,4,2,1,4,3,5,25,Relaxation
+Bora Bora,French Polynesia,450,26,1,5,0,0,2,3,5,55,Relaxation
+Langkawi,Malaysia,70,30,1,5,1,0,2,4,4,10,Relaxation
+Zanzibar,Tanzania,90,28,1,5,1,1,2,3,3,12,Relaxation
+Positano,Italy,200,26,2,4,1,1,4,3,5,28,Relaxation
+Algarve,Portugal,100,24,2,5,1,0,3,4,5,14,Relaxation
+Mykonos,Greece,220,26,1,4,1,0,4,2,5,30,Relaxation
+Palawan,Philippines,65,30,2,5,0,1,2,3,4,9,Relaxation
+Turks and Caicos,Turks and Caicos,300,30,1,5,0,0,2,3,5,40,Relaxation
+Cancun,Mexico,100,30,1,5,1,0,5,4,4,13,Relaxation
+Riviera Maya,Mexico,110,30,1,5,1,1,4,4,4,14,Relaxation
+Lombok,Indonesia,55,28,3,5,1,0,2,4,4,8,Relaxation
+Boracay,Philippines,70,30,1,5,0,0,3,3,4,10,Relaxation
+Koh Lanta,Thailand,55,30,1,5,0,0,2,3,4,8,Relaxation
+Madeira,Portugal,90,22,3,4,2,0,3,4,5,14,Relaxation
+Mauritius,Mauritius,180,24,2,5,1,0,2,4,5,22,Relaxation
+Bahamas,Bahamas,220,30,1,5,0,0,3,3,5,28,Relaxation
+Paris,France,200,20,1,1,130,3,5,4,4,22,Culture
+Rome,Italy,180,28,1,1,110,5,5,4,4,20,Culture
+Kyoto,Japan,150,28,2,1,90,5,4,4,5,18,Culture
+Istanbul,Turkey,80,26,2,1,80,3,4,4,3,12,Culture
+Cairo,Egypt,60,35,1,1,70,7,3,3,2,8,Culture
+Athens,Greece,100,30,2,2,90,7,4,4,4,14,Culture
+Marrakech,Morocco,55,35,2,1,20,1,4,3,3,8,Culture
+Mexico City,Mexico,60,18,1,1,150,4,4,3,3,8,Culture
+Cusco,Peru,50,15,4,1,30,9,3,3,3,7,Culture
+Havana,Cuba,70,30,1,2,20,1,3,3,3,10,Culture
+Petra,Jordan,80,32,3,1,10,3,3,3,3,11,Culture
+Varanasi,India,30,32,1,1,15,1,4,3,2,4,Culture
+Barcelona,Spain,160,24,2,3,50,9,5,4,4,20,Culture
+Prague,Czech Republic,90,22,2,1,40,1,4,4,5,12,Culture
+Dubrovnik,Croatia,130,26,2,3,20,1,4,3,5,18,Culture
+Seville,Spain,100,36,1,1,30,3,4,4,4,14,Culture
+Florence,Italy,160,28,2,1,80,5,5,4,5,20,Culture
+Bruges,Belgium,130,18,1,1,20,1,3,4,5,18,Culture
+Cartagena,Colombia,70,30,1,3,15,1,3,4,3,10,Culture
+Valletta,Malta,100,28,1,2,20,1,3,3,5,14,Culture
+Samarkand,Uzbekistan,45,30,2,1,25,3,2,3,3,6,Culture
+Luang Prabang,Laos,40,30,2,1,10,1,2,3,4,6,Culture
+Oaxaca,Mexico,50,24,2,1,20,1,2,3,4,7,Culture
+Fez,Morocco,45,32,1,1,15,1,3,3,3,6,Culture
+Siena,Italy,120,28,1,1,25,1,3,3,5,16,Culture
+Bruges,Belgium,130,18,1,1,20,1,3,4,5,18,Culture
+Bangkok,Thailand,40,30,1,1,15,3,5,4,3,5,Budget
+Hanoi,Vietnam,30,32,1,1,10,1,4,3,3,4,Budget
+Lisbon,Portugal,80,24,2,2,20,1,4,4,4,11,Budget
+Budapest,Hungary,60,24,2,1,20,1,4,4,4,8,Budget
+Krakow,Poland,45,20,2,1,15,1,3,4,5,6,Budget
+Ho Chi Minh City,Vietnam,30,30,1,1,10,1,5,3,3,4,Budget
+Colombo,Sri Lanka,40,30,1,2,8,1,3,3,3,5,Budget
+Kathmandu,Nepal,35,22,4,1,10,1,3,3,3,5,Budget
+Belgrade,Serbia,40,24,1,1,10,0,3,3,4,5,Budget
+Riga,Latvia,55,18,1,1,12,1,3,3,5,7,Budget
+Sofia,Bulgaria,35,24,1,1,10,1,2,3,4,5,Budget
+Tashkent,Uzbekistan,35,30,2,1,8,1,2,3,3,4,Budget
+Skopje,North Macedonia,35,26,2,1,6,1,2,3,4,5,Budget
+Phnom Penh,Cambodia,30,30,1,1,8,1,3,3,3,4,Budget
+La Paz,Bolivia,30,10,4,1,8,1,2,2,3,4,Budget
+Bucharest,Romania,45,24,1,1,12,0,3,3,4,6,Budget
+Sarajevo,Bosnia,40,22,3,1,10,1,2,3,4,5,Budget
+Ohrid,North Macedonia,35,24,2,3,5,1,2,3,4,5,Budget
+Tbilisi,Georgia,40,28,3,1,12,3,2,3,4,6,Budget
+Chiang Mai,Thailand,35,30,3,1,8,1,3,4,4,5,Budget
+Yangon,Myanmar,35,30,1,1,10,1,2,3,3,4,Budget
+Kotor,Montenegro,50,26,3,2,8,1,2,3,4,7,Budget
+Plovdiv,Bulgaria,35,26,2,1,8,1,2,3,4,5,Budget
+Tallinn,Estonia,60,18,1,1,12,1,3,4,5,8,Budget
+Chisinau,Moldova,30,22,1,1,5,0,1,3,4,4,Budget
+Maldives Overwater,Maldives,800,30,1,5,0,0,2,3,5,100,Luxury
+Dubai,UAE,400,38,1,3,15,0,5,4,5,50,Luxury
+Monaco,Monaco,500,24,1,2,8,0,4,2,5,65,Luxury
+St Barts,Saint Barthelemy,600,28,1,5,1,0,2,2,5,75,Luxury
+Tuscany,Italy,300,28,2,1,20,2,3,3,5,40,Luxury
+Aspen,USA,400,18,5,1,5,0,3,3,5,50,Luxury
+Capri,Italy,350,26,2,3,5,0,3,3,5,45,Luxury
+Portofino,Italy,380,24,2,3,4,0,3,3,5,50,Luxury
+Courchevel,France,500,4,5,1,3,0,3,3,5,65,Luxury
+Lake Como,Italy,320,24,2,2,5,1,3,3,5,42,Luxury
+Napa Valley,USA,350,28,2,1,8,0,3,3,5,45,Luxury
+Riviera Nayarit,Mexico,280,28,1,5,2,0,2,3,5,35,Luxury
+Laucala Island,Fiji,2000,26,2,5,0,0,1,2,5,250,Luxury
+Verbier,Switzerland,480,10,5,1,2,0,3,3,5,62,Luxury
+Amanpuri,Thailand,700,30,1,4,2,0,2,3,5,90,Luxury
+Mustique,St Vincent,800,28,1,5,0,0,1,2,5,100,Luxury
+Soneva Fushi,Maldives,900,30,1,5,0,0,1,3,5,110,Luxury
+Costa Smeralda,Italy,400,26,1,4,3,0,3,3,5,52,Luxury
+Kamalame Cay,Bahamas,650,28,1,5,0,0,1,3,5,80,Luxury
+Antibes,France,350,24,1,3,5,0,3,3,5,45,Luxury
+Mykonos Luxury,Greece,400,26,1,4,2,0,4,2,5,52,Luxury
+Amalfi Private,Italy,420,26,2,4,3,1,3,3,5,55,Luxury
+Phuket Luxury,Thailand,380,30,1,4,2,0,3,3,5,48,Luxury
+Forte dei Marmi,Italy,360,26,1,4,3,0,3,3,5,46,Luxury
+Orlando,USA,150,32,1,2,5,0,5,5,5,18,Family
+Gold Coast,Australia,160,18,2,4,4,0,4,5,5,20,Family
+Costa Rica,Costa Rica,100,26,4,3,3,1,3,5,4,13,Family
+Disneyland Paris,France,250,18,1,1,8,0,5,5,5,30,Family
+Tokyo,Japan,160,28,2,1,80,5,5,5,5,20,Family
+Singapore,Singapore,200,30,1,2,20,0,5,5,5,25,Family
+Hawaii,USA,250,28,3,5,5,0,4,5,5,30,Family
+San Diego,USA,180,22,2,4,10,0,4,5,5,22,Family
+Vancouver,Canada,160,18,3,2,12,0,3,5,5,20,Family
+Amsterdam,Netherlands,180,18,1,1,50,1,4,4,5,22,Family
+Copenhagen,Denmark,220,18,1,1,20,0,3,5,5,28,Family
+Porto,Portugal,90,20,2,2,15,1,3,5,5,12,Family
+Edinburgh,Scotland,130,15,3,1,20,1,4,5,5,16,Family
+Vienna,Austria,150,22,1,1,50,1,4,5,5,18,Family
+Reykjavik,Iceland,220,12,4,1,8,0,3,4,5,28,Family
+Cape Town,South Africa,90,16,4,3,12,0,3,4,3,12,Family
+Kuala Lumpur,Malaysia,60,30,1,1,10,0,4,5,4,8,Family
+New Zealand South Island,New Zealand,140,8,4,2,5,0,2,5,5,18,Family
+Barcelona Family,Spain,160,24,2,3,50,9,5,5,4,20,Family
+Lisbon Family,Portugal,100,24,2,2,20,1,3,5,5,13,Family
+Dublin,Ireland,160,16,2,1,15,0,3,5,5,20,Family
+Bruges Family,Belgium,130,18,1,1,20,1,3,5,5,18,Family
+Stockholm,Sweden,200,20,2,1,20,0,3,5,5,25,Family
+Munich,Germany,160,20,2,1,30,1,4,5,5,20,Family
+Sydney,Australia,180,14,3,4,15,0,4,5,5,22,Family

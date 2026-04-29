@@ -1,0 +1,482 @@
+[
+  {
+    "id": "travel_doc_001",
+    "destination": "Patagonia",
+    "category": "Overview / See / Do / Eat",
+    "content": "Patagonia is a travel destination strongly associated with remote hiking glaciers wildlife Argentina Chile Torres del Paine El Chaltén Perito Moreno. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_002",
+    "destination": "Patagonia",
+    "category": "Best time to visit",
+    "content": "For Patagonia, the practical best-time guidance is: November to March; summer is best for hiking, long daylight, boat trips; winter is limited except some ski areas. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_003",
+    "destination": "Patagonia",
+    "category": "Budget and typical costs",
+    "content": "For Patagonia, approximate cost guidance is: medium to expensive; budget 60-100 USD/day, mid-range 120-250 USD/day; tours and transfers raise cost. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_004",
+    "destination": "Patagonia",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Patagonia, access and trip-fit guidance is: fly via Buenos Aires or Santiago then El Calafate, Ushuaia, Bariloche or Punta Arenas; 7-14 days; best for hikers and nature lovers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_005",
+    "destination": "Bali",
+    "category": "Overview / See / Do / Eat",
+    "content": "Bali is a travel destination strongly associated with beaches temples rice terraces Ubud Uluwatu Tanah Lot waterfalls yoga surfing Indonesian island food nasi goreng satay seafood. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_006",
+    "destination": "Bali",
+    "category": "Best time to visit",
+    "content": "For Bali, the practical best-time guidance is: April to October dry season; May June September often best; November to March wetter and humid. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_007",
+    "destination": "Bali",
+    "category": "Budget and typical costs",
+    "content": "For Bali, approximate cost guidance is: budget 30-60 USD/day, mid-range 70-150 USD/day; trendy areas and private drivers increase cost. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_008",
+    "destination": "Bali",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Bali, access and trip-fit guidance is: fly to Ngurah Rai near Denpasar; 7-10 days; best for couples, surfers, wellness travelers and digital nomads. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_009",
+    "destination": "Paris",
+    "category": "Overview / See / Do / Eat",
+    "content": "Paris is a travel destination strongly associated with Eiffel Tower Louvre Notre-Dame Seine Montmartre museums cafés pastries cheese fashion architecture France. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_010",
+    "destination": "Paris",
+    "category": "Best time to visit",
+    "content": "For Paris, the practical best-time guidance is: April to June or September to October; summer busy; winter colder but good for museums and lower crowds. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_011",
+    "destination": "Paris",
+    "category": "Budget and typical costs",
+    "content": "For Paris, approximate cost guidance is: budget 70-120 EUR/day, mid-range 150-300 EUR/day; accommodation and restaurants are the main costs. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_012",
+    "destination": "Paris",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Paris, access and trip-fit guidance is: fly CDG or Orly, train by Eurostar/TGV; 3-5 days; best for culture, food, museums and couples. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_013",
+    "destination": "Bangkok",
+    "category": "Overview / See / Do / Eat",
+    "content": "Bangkok is a travel destination strongly associated with Grand Palace Wat Arun Wat Pho Chinatown floating markets malls nightlife street food pad thai mango sticky rice. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_014",
+    "destination": "Bangkok",
+    "category": "Best time to visit",
+    "content": "For Bangkok, the practical best-time guidance is: November to February cooler and drier; March to May very hot; June to October rainy. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_015",
+    "destination": "Bangkok",
+    "category": "Budget and typical costs",
+    "content": "For Bangkok, approximate cost guidance is: budget 30-60 USD/day, mid-range 70-150 USD/day; street food and transit make it good value. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_016",
+    "destination": "Bangkok",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Bangkok, access and trip-fit guidance is: fly to Suvarnabhumi or Don Mueang; 3-5 days; best for food lovers, backpackers, shoppers and nightlife. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_017",
+    "destination": "Maldives",
+    "category": "Overview / See / Do / Eat",
+    "content": "Maldives is a travel destination strongly associated with turquoise lagoons coral reefs white beaches overwater villas snorkeling diving resorts honeymoon seafood coconut tuna. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_018",
+    "destination": "Maldives",
+    "category": "Best time to visit",
+    "content": "For Maldives, the practical best-time guidance is: November to April dry season; January to March best sunshine; May to October wetter but cheaper. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_019",
+    "destination": "Maldives",
+    "category": "Budget and typical costs",
+    "content": "For Maldives, approximate cost guidance is: local island 60-120 USD/day; resorts much higher; speedboat and seaplane transfers are hidden costs. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_020",
+    "destination": "Maldives",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Maldives, access and trip-fit guidance is: fly to Velana near Malé then boat, ferry, domestic flight or seaplane; 4-7 days; best for honeymooners and divers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_021",
+    "destination": "Kyoto",
+    "category": "Overview / See / Do / Eat",
+    "content": "Kyoto is a travel destination strongly associated with Fushimi Inari Kinkaku-ji temples shrines bamboo grove Gion tea ceremony Nishiki market matcha kaiseki Japan. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_022",
+    "destination": "Kyoto",
+    "category": "Best time to visit",
+    "content": "For Kyoto, the practical best-time guidance is: late March to early April for cherry blossoms; mid November to early December for autumn colors; summer humid. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_023",
+    "destination": "Kyoto",
+    "category": "Budget and typical costs",
+    "content": "For Kyoto, approximate cost guidance is: budget 60-100 USD/day, mid-range 120-250 USD/day; peak seasons raise hotel prices. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_024",
+    "destination": "Kyoto",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Kyoto, access and trip-fit guidance is: arrive by train from Osaka or Tokyo, or via Kansai airport; 3-5 days; best for culture, history and photography. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_025",
+    "destination": "Iceland",
+    "category": "Overview / See / Do / Eat",
+    "content": "Iceland is a travel destination strongly associated with volcanoes glaciers waterfalls geysers Golden Circle Blue Lagoon South Coast northern lights Ring Road lamb seafood skyr. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_026",
+    "destination": "Iceland",
+    "category": "Best time to visit",
+    "content": "For Iceland, the practical best-time guidance is: June to August for road trips and hiking; November to March for northern lights and ice caves. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_027",
+    "destination": "Iceland",
+    "category": "Budget and typical costs",
+    "content": "For Iceland, approximate cost guidance is: expensive; budget 90-150 USD/day, mid-range 180-350 USD/day; car rental and tours cost a lot. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_028",
+    "destination": "Iceland",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Iceland, access and trip-fit guidance is: fly to Keflavik near Reykjavik; 4-5 days short trip, 7-10 days Ring Road; best for nature and photographers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_029",
+    "destination": "Queenstown",
+    "category": "Overview / See / Do / Eat",
+    "content": "Queenstown is a travel destination strongly associated with Lake Wakatipu mountains adventure sports bungee jumping jet boating skiing hiking Milford Sound wine lamb seafood New Zealand. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_030",
+    "destination": "Queenstown",
+    "category": "Best time to visit",
+    "content": "For Queenstown, the practical best-time guidance is: December to February for summer activities; June to August for skiing; autumn good for scenery. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_031",
+    "destination": "Queenstown",
+    "category": "Budget and typical costs",
+    "content": "For Queenstown, approximate cost guidance is: budget 70-120 USD/day, mid-range 150-300 USD/day; adventure activities add quickly. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_032",
+    "destination": "Queenstown",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Queenstown, access and trip-fit guidance is: fly to Queenstown or arrive by South Island road trip; 3-5 days; best for adventure travelers, skiers and road-trippers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_033",
+    "destination": "Marrakech",
+    "category": "Overview / See / Do / Eat",
+    "content": "Marrakech is a travel destination strongly associated with medina souks Jemaa el-Fnaa Bahia Palace Majorelle Garden riads hammams tagine couscous mint tea Morocco. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_034",
+    "destination": "Marrakech",
+    "category": "Best time to visit",
+    "content": "For Marrakech, the practical best-time guidance is: March to May or September to November; summer can be very hot; winter cooler nights. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_035",
+    "destination": "Marrakech",
+    "category": "Budget and typical costs",
+    "content": "For Marrakech, approximate cost guidance is: budget 30-60 USD/day, mid-range 80-180 USD/day; private guides, riads and shopping increase cost. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_036",
+    "destination": "Marrakech",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Marrakech, access and trip-fit guidance is: fly to Marrakech Menara or train from Casablanca/Rabat/Fes; 3-4 days; best for culture, food, markets and architecture. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_037",
+    "destination": "Banff",
+    "category": "Overview / See / Do / Eat",
+    "content": "Banff is a travel destination strongly associated with Canadian Rockies Lake Louise Moraine Lake hiking skiing wildlife hot springs Icefields Parkway Canada mountains. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_038",
+    "destination": "Banff",
+    "category": "Best time to visit",
+    "content": "For Banff, the practical best-time guidance is: June to September for lakes and hiking; December to March for skiing; summer very busy. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_039",
+    "destination": "Banff",
+    "category": "Budget and typical costs",
+    "content": "For Banff, approximate cost guidance is: budget 70-130 USD/day, mid-range 180-350 USD/day; lodging is expensive in peak season. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_040",
+    "destination": "Banff",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Banff, access and trip-fit guidance is: fly to Calgary then shuttle or drive 1.5-2 hours; 3-5 days; best for hikers, skiers, families and photographers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_041",
+    "destination": "Santorini",
+    "category": "Overview / See / Do / Eat",
+    "content": "Santorini is a travel destination strongly associated with Greek island caldera white villages blue domes Oia Fira sunsets wineries beaches seafood fava wine. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_042",
+    "destination": "Santorini",
+    "category": "Best time to visit",
+    "content": "For Santorini, the practical best-time guidance is: late April to June or September to October; July-August hot crowded expensive; winter quieter with closures. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_043",
+    "destination": "Santorini",
+    "category": "Budget and typical costs",
+    "content": "For Santorini, approximate cost guidance is: budget 60-110 EUR/day away from caldera, mid-range 150-300 EUR/day; caldera hotels cost more. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_044",
+    "destination": "Santorini",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Santorini, access and trip-fit guidance is: fly from Athens/Europe or ferry from Athens/Cyclades; 3-4 days; best for couples, honeymooners and photographers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_045",
+    "destination": "Dubai",
+    "category": "Overview / See / Do / Eat",
+    "content": "Dubai is a travel destination strongly associated with Burj Khalifa Dubai Mall Marina Palm Jumeirah desert safari beaches souks Al Fahidi luxury restaurants UAE. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_046",
+    "destination": "Dubai",
+    "category": "Best time to visit",
+    "content": "For Dubai, the practical best-time guidance is: November to March best; May to September extremely hot; winter is peak season. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_047",
+    "destination": "Dubai",
+    "category": "Budget and typical costs",
+    "content": "For Dubai, approximate cost guidance is: budget 60-120 USD/day, mid-range 150-300 USD/day; paid attractions and taxis increase cost. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_048",
+    "destination": "Dubai",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Dubai, access and trip-fit guidance is: fly to Dubai International; 3-5 days; best for families, shoppers, luxury travelers and stopovers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_049",
+    "destination": "Costa Rica",
+    "category": "Overview / See / Do / Eat",
+    "content": "Costa Rica is a travel destination strongly associated with rainforests volcanoes beaches wildlife Arenal Monteverde Manuel Antonio Tortuguero surfing zipline gallo pinto. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_050",
+    "destination": "Costa Rica",
+    "category": "Best time to visit",
+    "content": "For Costa Rica, the practical best-time guidance is: December to April dry season; May to November greener and cheaper but rainy; September-October wet in many Pacific areas. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_051",
+    "destination": "Costa Rica",
+    "category": "Budget and typical costs",
+    "content": "For Costa Rica, approximate cost guidance is: budget 50-90 USD/day, mid-range 120-250 USD/day; tours, shuttles and parks add cost. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_052",
+    "destination": "Costa Rica",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Costa Rica, access and trip-fit guidance is: fly to San José or Liberia; 7-10 days; best for wildlife, families, surfers and eco-travelers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_053",
+    "destination": "Budapest",
+    "category": "Overview / See / Do / Eat",
+    "content": "Budapest is a travel destination strongly associated with Danube Parliament Buda Castle Fisherman's Bastion thermal baths ruin bars goulash architecture Hungary. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_054",
+    "destination": "Budapest",
+    "category": "Best time to visit",
+    "content": "For Budapest, the practical best-time guidance is: April to June or September to October; winter cold but good for Christmas markets and baths. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_055",
+    "destination": "Budapest",
+    "category": "Budget and typical costs",
+    "content": "For Budapest, approximate cost guidance is: budget 40-80 EUR/day, mid-range 90-180 EUR/day; generally better value than Western Europe. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_056",
+    "destination": "Budapest",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Budapest, access and trip-fit guidance is: fly to Budapest airport or train from Vienna/Prague/Bratislava; 3-4 days; best for students, couples, nightlife and spa lovers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_057",
+    "destination": "Cape Town",
+    "category": "Overview / See / Do / Eat",
+    "content": "Cape Town is a travel destination strongly associated with Table Mountain Robben Island V&A Waterfront Cape Point Boulders Beach penguins Winelands seafood braai South Africa. This document is useful for broad RAG queries such as what to see, what to do, what to eat, and what kind of traveler would enjoy the destination. It should help the agent answer general planning questions and match the destination to user intent.",
+    "source": "Wikivoyage-style open travel guide summary",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_058",
+    "destination": "Cape Town",
+    "category": "Best time to visit",
+    "content": "For Cape Town, the practical best-time guidance is: November to March warm and dry; March-April good shoulder; June-August cooler and wetter. This chunk is designed for user questions about weather, ideal months, peak season, low season, and months to avoid. The agent should use this record when a traveler asks when to go, whether a month is suitable, or how seasonality affects the trip.",
+    "source": "Travel planning summary; verify exact weather before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_059",
+    "destination": "Cape Town",
+    "category": "Budget and typical costs",
+    "content": "For Cape Town, approximate cost guidance is: budget 40-80 USD/day, mid-range 100-220 USD/day; tours, car rental and premium areas raise cost. These are planning estimates, not fixed prices. This chunk helps the RAG agent answer budget questions such as daily cost, whether the destination is cheap or expensive, and what cost drivers matter most. The final app should mention that prices vary by season, booking time, exchange rates, and travel style.",
+    "source": "Travel budget estimate summary; update prices before production use",
+    "recommended_for_rag": true
+  },
+  {
+    "id": "travel_doc_060",
+    "destination": "Cape Town",
+    "category": "Getting there / Duration / Best for",
+    "content": "For Cape Town, access and trip-fit guidance is: fly to Cape Town International; 4-6 days, 7-10 with Winelands; best for nature, food, hikers and photographers. This chunk is useful for user questions about airports, transport, how many days are needed, who the destination suits, and whether it fits a short or long itinerary. It helps the agent recommend destinations based on traveler profile, available time, and trip style.",
+    "source": "Travel logistics summary; verify routes before production use",
+    "recommended_for_rag": true
+  }
+]
