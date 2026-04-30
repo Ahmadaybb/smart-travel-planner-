@@ -1,12 +1,8 @@
 import httpx
-import logging
+import json
 import structlog
-from tenacity import (
-    retry,
-    stop_after_attempt,
-    wait_exponential,
-    retry_if_exception_type
-)
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+from langchain_groq import ChatGroq
 from app.config import get_settings
 
 settings = get_settings()
@@ -27,27 +23,21 @@ async def _send_webhook(payload: dict) -> None:
         response.raise_for_status()
 
 
+
 async def deliver_webhook(
     user_email: str,
     query: str,
     answer: str,
     tool_calls: list[dict]
 ) -> None:
-    payload = {
-        "user": user_email,
-        "query": query,
-        "answer": answer,
-        "tools_used": [t["tool_name"] for t in tool_calls]
-    }
-
     try:
+        payload = {
+            "user_email": user_email,
+            "answer": answer
+        }
+
         await _send_webhook(payload)
         logger.info("webhook_delivered", user=user_email)
 
     except Exception as e:
-        # Log failure but never raise — webhook must not break user response
-        logger.error(
-            "webhook_failed",
-            user=user_email,
-            error=str(e)
-        )
+        logger.error("webhook_failed", user=user_email, error=str(e))

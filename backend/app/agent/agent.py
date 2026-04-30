@@ -7,6 +7,7 @@ from app.tools.rag_tool import rag_tool, RAGToolInput
 from app.tools.classifier_tool import classifier_tool, ClassifierToolInput
 from app.tools.live_conditions_tool import live_conditions_tool, LiveConditionsInput
 
+
 settings = get_settings()
 
 # Two models — cheap for extraction, strong for synthesis
@@ -75,13 +76,19 @@ async def run_tool(tool_name: str, tool_args: dict, db: AsyncSession) -> str:
 
 async def run_agent(user_query: str, db: AsyncSession) -> dict:
     messages = [
-        SystemMessage(content="""You are a smart travel planning assistant.
-You have three tools: rag_tool, classifier_tool, and live_conditions_tool.
-Use them together to answer the user's travel question.
-Always retrieve destination knowledge first, then classify travel style,
-then check live conditions. Synthesize all results into one coherent plan.
-If tools return conflicting information, acknowledge the tension explicitly."""),
-        HumanMessage(content=user_query)
+    SystemMessage(content="""You are a smart travel planning assistant.
+    You have three tools: rag_tool, classifier_tool, and live_conditions_tool.
+
+    Follow this EXACT order every time:
+    1. Call rag_tool to find destinations matching the user's preferences
+    2. Pick the TOP destination from RAG results
+    3. Call classifier_tool with features for THAT destination
+    4. Call live_conditions_tool with THAT SAME destination — never use a different one
+    5. Synthesize all results into one trip plan
+
+    CRITICAL: live_conditions_tool destination must match the RAG recommended destination.
+    If RAG says Banff — check weather for Banff, not Yellowstone."""),
+    HumanMessage(content=user_query)
     ]
 
     tool_calls_log = []

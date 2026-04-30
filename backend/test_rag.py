@@ -1,37 +1,36 @@
 import asyncio
-from sqlalchemy import text
 from app.db import AsyncSessionLocal
-from app.state import embedder
+from app.state import ml_model, embedder
 from sentence_transformers import SentenceTransformer
+import joblib
+from app.config import get_settings
+
+settings = get_settings()
 
 async def test():
+    # Load models manually like lifespan does
+    ml_model["classifier"] = joblib.load(settings.ML_MODEL_PATH)
     embedder["model"] = SentenceTransformer("all-MiniLM-L6-v2")
-    
+    print("Models loaded")
+
     async with AsyncSessionLocal() as db:
-        # Test raw vector search
-        query = "hiking destinations"
-        query_vector = embedder["model"].encode(query).tolist()
-        query_str = "[" + ",".join(map(str, query_vector)) + "]"
+        from app.agent.agent import run_agent
         
-        print(f"Vector length: {len(query_vector)}")
-        print(f"Query string preview: {query_str[:100]}")
+        query = "I have 2 weeks in July and $700. I like swimimg. Where should I go?"
+        print(f"Query: {query}\n")
         
-        try:
-            result = await db.execute(
-                text("""
-                    SELECT destination, content,
-                           1 - (embedding <=> :query_vec AS vector) AS score
-                    FROM documents
-                    ORDER BY embedding <=> :query_vec AS vector
-                    LIMIT 3
-                """),
-                {"query_vec": query_str}
-            )
-            rows = result.fetchall()
-            print(f"Found: {len(rows)} results")
-            for row in rows:
-                print(f"  {row.destination} - score: {row.score}")
-        except Exception as e:
-            print(f"Search error: {e}")
+        result = await run_agent(query, db)
+        
+        print("=== TOOL CALLS ===")
+        for tool in result["tool_calls"]:
+            print(f"\nTool: {tool['tool_name']}")
+            print(f"Input: {tool['tool_input']}")
+            print(f"Output: {tool['tool_output'][:200]}")
+        
+        print("\n=== ANSWER ===")
+        print(result["answer"])
+        
+        print("\n=== TOKEN USAGE ===")
+        print(result["token_usage"])
 
 asyncio.run(test())
