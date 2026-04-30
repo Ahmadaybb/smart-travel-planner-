@@ -53,6 +53,14 @@ export default function Chat({token,userEmail,onLogout}) {
 
   useEffect(()=>{endRef.current?.scrollIntoView({behavior:"smooth"})},[messages])
 
+  const handleSelectChat=useCallback((item)=>{
+    const ts=new Date(item.created_at).getTime()||Date.now()
+    setMessages([
+      {id:ts,role:"user",text:item.query,ts},
+      {id:ts+1,role:"agent",text:item.answer,tools:[],loading:false,streaming:false,ts}
+    ])
+  },[])
+
   const handleSend=useCallback(async(query)=>{
     if(streaming)return
     const uid=Date.now(), aid=uid+1
@@ -91,7 +99,7 @@ export default function Chat({token,userEmail,onLogout}) {
     <div className="chat-layout">
       <StarCanvas/>
       <button className="mobile-menu-btn" onClick={()=>setSidebarOpen(true)}>☰</button>
-      <Sidebar token={token} userEmail={userEmail} onLogout={onLogout} isOpen={sidebarOpen} onClose={()=>setSidebarOpen(false)}/>
+      <Sidebar token={token} userEmail={userEmail} onLogout={onLogout} isOpen={sidebarOpen} onClose={()=>setSidebarOpen(false)} onSelectChat={handleSelectChat}/>
       <div className="chat-main">
         <div className="chat-messages">
           {messages.length===0

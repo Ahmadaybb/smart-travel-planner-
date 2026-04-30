@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import toast from "react-hot-toast"
 const API = "http://localhost:8000"
 
-export default function Sidebar({token,userEmail,onLogout,isOpen,onClose}) {
+export default function Sidebar({token,userEmail,onLogout,isOpen,onClose,onSelectChat}) {
   const [history,setHistory]=useState([])
   useEffect(()=>{
     if(!token)return
@@ -27,7 +27,7 @@ export default function Sidebar({token,userEmail,onLogout,isOpen,onClose}) {
           {history.length===0
             ?<p className="history-empty">No journeys yet — start planning!</p>
             :history.map(item=>(
-              <div key={item.id} className="history-item">
+              <div key={item.id} className="history-item" onClick={()=>{onSelectChat&&onSelectChat(item);onClose()}} style={{cursor:"pointer"}}>
                 <span className="hi-icon">📍</span>
                 <span className="hi-text">{item.query.slice(0,40)}{item.query.length>40?"…":""}</span>
               </div>

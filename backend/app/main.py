@@ -12,7 +12,6 @@ from sentence_transformers import SentenceTransformer
 from sqlalchemy import text
 
 settings = get_settings()
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     async with engine.begin() as conn:
